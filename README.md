@@ -42,7 +42,6 @@ def send_text_messages(request):
     发送文本消息
     """
     fs_client = FeishuClient()
-    fs_client.send_card()
     res = fs_client.send_text(text='测试消息', receive_id_type='open_id', receive_id='ou_63f6845d304e7a1a3df99d6fce291d58')
     print(res)
     return JsonResponse(res)

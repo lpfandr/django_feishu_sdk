@@ -8,11 +8,11 @@
 import setuptools
 
 # 自动读取readme
-with open('README.rst', 'r', encoding='utf-8') as f:
+with open('README.md', 'r', encoding='utf-8') as f:
     readme = f.read()
 setuptools.setup(
     name="django_feishu_sdk",  # Replace with your own username
-    version="0.1.3",
+    version="0.1.5",
     author="lpf_andr",
     author_email="lpf_andr@163.com",
     description="A feishu api package for django",
